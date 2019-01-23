@@ -1,0 +1,16 @@
+{
+  "rules": {
+    ".read": true,
+    ".write": true,
+
+    "notifications": {
+      "$uid": {
+         "$notificationKey": {
+            ".read": "auth.uid === $uid",
+            ".write": "auth.uid === $uid"
+         }
+      }
+    }
+
+  }
+}
